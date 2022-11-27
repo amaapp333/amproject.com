@@ -43,7 +43,15 @@
 <body>
 
 <div align="center">
-<h1>Banner Admob</h1>
+<h1>Maliek Mobile</h1>
+
+    <lu>
+        <li><a href="javascript:admob.hideBanner();">Hide</a></li>
+        <br/><br/>
+        <li><a href="javascript:admob.showBannerAbsolute(admob.BannerSize.BANNER,0,170)">Show banner absolute</a></li>
+        <br/><br/>
+        <li><a href="javascript:admob.showBanner(admob.BannerSize.SMART_BANNER,admob.Position.TOP_CENTER);">Show banner relation</a></li>
+    </lu>
     <lu>
         <li><a href="javascript:admob.hideBanner();">hiden banner</a></li>
         <br/><br/>
@@ -52,22 +60,18 @@
         <li><a href="javascript:admob.showBanner(admob.BannerSize.SMART_BANNER,admob.Position.TOP_CENTER);">show banner relation</a></li>
     </lu>
 
+
 </div>
-<script type="text/javascript" src="cordova.js"></script>
+
 <script type="text/javascript">
     function onDeviceReady() {
         admob.initAdmob("banner ID","interstitial ID");
     }
     document.addEventListener('deviceready',onDeviceReady, false);
-</script><h1>Banner Admob</h1>
-    <lu>
-        <li><a href="javascript:admob.hideBanner();">hiden banner</a></li>
-        <br/><br/>
-        <li><a href="javascript:admob.showBannerAbsolute(admob.BannerSize.BANNER,0,170)">show banner absolute</a></li>
-        <br/><br/>
-        <li><a href="javascript:admob.showBanner(admob.BannerSize.SMART_BANNER,admob.Position.TOP_CENTER);">show banner relation</a></li>
-    </lu>
+</script>
 
+
+    
 </div>
 </div>
 <script type="text/javascript" src="cordova.js"></script>
